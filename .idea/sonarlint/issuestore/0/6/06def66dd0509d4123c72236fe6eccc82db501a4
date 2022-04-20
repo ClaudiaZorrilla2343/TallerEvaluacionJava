@@ -1,0 +1,18 @@
+
+x
+java:S1192#"VDefine a constant instead of duplicating this literal "No es un dÃ­a laboral" 3 times.(“¦»Ùþÿÿÿÿ8Ï‚Ö©„0
+p
+java:S1192"SDefine a constant instead of duplicating this literal "Es un dÃ­a laboral" 4 times.(æÖçê8Ï‚Ö©„0
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(à–ù¦ýÿÿÿÿ
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¦þ›²þÿÿÿÿ8²ú»©„0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(æÖçê8·ú»©„0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(æÖçê8Ù‚Ö©„0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(æÖçê8Ù‚Ö©„0
+U	java:S106 "9Replace this use of System.out or System.err by a logger.(æÖçê8Ú‚Ö©„0
+Z	java:S106#"9Replace this use of System.out or System.err by a logger.(“¦»Ùþÿÿÿÿ8Ú‚Ö©„0
+Z	java:S106&"9Replace this use of System.out or System.err by a logger.(“¦»Ùþÿÿÿÿ8Ú‚Ö©„0
+Z	java:S106)"9Replace this use of System.out or System.err by a logger.(“¦»Ùþÿÿÿÿ8Ú‚Ö©„0
+Z	java:S106,"9Replace this use of System.out or System.err by a logger.(õ–çÿøÿÿÿÿ8Ú‚Ö©„0
+Z	java:S106/"9Replace this use of System.out or System.err by a logger.(î¹Òôþÿÿÿÿ8Û‚Ö©„0
+Q
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëÝüÿÿÿÿ8Ñ¾Õ©„0

@@ -1,0 +1,10 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(à–ù¦ýÿÿÿÿ
+}
+java:S4276"[Refactor this code to use the more specialised Functional Interface 'UnaryOperator<String>'(Ýƒò€ùÿÿÿÿ8Ä×¡ª„0
+j
+java:S5361"HReplace this call to "replaceAll()" by a call to the "replace()" method.(Ýƒò€ùÿÿÿÿ8Å×¡ª„0
+}
+java:S4276"[Refactor this code to use the more specialised Functional Interface 'UnaryOperator<String>'(×Òý†ÿÿÿÿÿ8Ç×¡ª„0
+T	java:S106"9Replace this use of System.out or System.err by a logger.(ãöî8Ç×¡ª„0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(•ÐÂò8è™ºª„0
