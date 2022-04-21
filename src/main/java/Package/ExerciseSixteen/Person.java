@@ -1,5 +1,6 @@
 package Package.ExerciseSixteen;
 
+import java.util.Objects;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -16,20 +17,20 @@ public class Person {
     }
 
     public Person(String name, Integer age, Character sex) {
-        this.name = name;
-        this.age = age;
-        this.sex = sex;
+        this.name = Objects.requireNonNull(name);
+        this.age = Objects.requireNonNull(age);
+        this.sex = Objects.requireNonNull(sex);
         this.height = height;
         this.weight = weight;
         this.DNI = DNI;
     }
 
     public Person(String name, Integer age, Character sex, Double height, Double weight, Integer DNI) {
-        this.name = name;
-        this.age = age;
-        this.sex = sex;
-        this.height = height;
-        this.weight = weight;
+        this.name = Objects.requireNonNull(name);
+        this.age = Objects.requireNonNull(age);
+        this.sex = Objects.requireNonNull(sex);
+        this.height = Objects.requireNonNull(height);
+        this.weight = Objects.requireNonNull(weight);
         this.DNI = generateDNI();
     }
 
@@ -45,6 +46,13 @@ public class Person {
             System.out.println("¡ERROR!");
         }
         return 1;
+    }
+
+    public Boolean isLegalAge() {
+        if(age <= 18){
+            return true;
+        }
+        return false;
     }
 
     public void checkSex(Character sex) {
