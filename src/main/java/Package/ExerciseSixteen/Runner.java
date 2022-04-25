@@ -7,7 +7,11 @@ public class Runner {
         Person personTwo = new Person();
         Person personThree = new Person();
 
-        personOne.requestData();
+
+
+
+        personOne.toString();
+        personTwo.toString();
         personTwo.toString();
     }
 }

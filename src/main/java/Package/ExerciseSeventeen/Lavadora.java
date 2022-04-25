@@ -6,13 +6,13 @@ public class Lavadora extends  Electrodomestico {
 
     public  Lavadora() {}
 
-    public Lavadora(Integer precioBase, Integer peso) {
+    public Lavadora(Double precioBase, Integer peso) {
         super(precioBase, peso);
     }
 
     public Lavadora(
             Colors colors,
-            Integer precioBase,
+            Double precioBase,
             Character consumoEnergetico,
             Integer peso, Integer carga)
     {
@@ -24,7 +24,7 @@ public class Lavadora extends  Electrodomestico {
         return carga;
     }
 
-    public Integer precioFinal() {
+    public Double precioFinal() {
 
         if(carga > 30) {
             precioBase = precioBase + 50;

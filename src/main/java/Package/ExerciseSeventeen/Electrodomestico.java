@@ -4,8 +4,8 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class Electrodomestico {
-    protected Integer precioBase = 100;
-    protected Character consumoEnergetico = 'F';
+    protected Double precioBase = 100.0;
+    protected Character consumoEnergetico;
     protected Integer peso = 5;
 
     private Colors colors;
@@ -13,20 +13,20 @@ public class Electrodomestico {
     public Electrodomestico() {
     }
 
-    public Electrodomestico(Integer precioBase, Integer peso) {
+    public Electrodomestico(Double precioBase, Integer peso) {
         this.precioBase = Objects.requireNonNull(precioBase);
         this.peso = Objects.requireNonNull(peso);
     }
 
     public Electrodomestico(
             Colors colors,
-            Integer precioBase,
+            Double precioBase,
             Character consumoEnergetico,
             Integer peso)
     {
-        this.colors = colors;
+        this.colors = comprobarColor();
         this.precioBase = Objects.requireNonNull(precioBase);
-        this.consumoEnergetico = Objects.requireNonNull(consumoEnergetico);
+        this.consumoEnergetico = 'F';
         this.peso = Objects.requireNonNull(peso);
     }
 
@@ -40,7 +40,7 @@ public class Electrodomestico {
         GRIS
     }
 
-    public Integer getPrecioBase() {
+    public Double getPrecioBase() {
         return precioBase;
     }
 
@@ -56,7 +56,7 @@ public class Electrodomestico {
         return colors;
     }
 
-    public Integer comprobarConsumoEnergetico(Character consumoEnergetico) {
+    public double comprobarConsumoEnergetico(Character consumoEnergetico) {
 
         try {
             switch (consumoEnergetico) {
@@ -90,41 +90,46 @@ public class Electrodomestico {
         return precioBase;
     }
 
-    public void comprobarColor() {
+    public Colors comprobarColor() {
+        Colors valorColor = null;
         try {
 
             System.out.println("Colores disponibles para los electrodomesticos");
             Colors[] eleccion = Colors.values();
             for (int i = 0; i < eleccion.length; i++) {
-                System.out.println((i + 1)+") "+eleccion[i]);
+                System.out.println((i + 1) + ") " + eleccion[i]);
             }
             System.out.println("Elige el color");
             Integer opcionUsuario = read.nextInt();
 
-            Colors valorColor = eleccion[opcionUsuario-1];
-            System.out.println("El color seleccionado fue: "+valorColor);
+            valorColor = eleccion[opcionUsuario - 1];
+            System.out.println("El color seleccionado fue: " + valorColor);
 
-        }catch (Exception e){
+            return valorColor;
+        } catch (Exception e) {
             System.out.println("¡ERROR!");
         }
+        return valorColor;
     }
 
-    public Integer precioFinal() {
+    public Double precioFinal() {
 
         System.out.println("Ingrese la letra del consumo energetico");
         consumoEnergetico = read.nextLine().charAt(0);
         comprobarConsumoEnergetico(consumoEnergetico);
 
+        Double precioBaseApoyo = 0.0;
+
         if (peso >= 0 && peso < 20) {
-            precioBase = precioBase + 10;
+            precioBaseApoyo = precioBase + 10.0;
         }else if(peso >= 20 && peso < 50) {
-            precioBase = precioBase + 50;
+            precioBaseApoyo = precioBase + 50.0;
         }else if (peso >= 50 && peso < 80) {
-            precioBase = precioBase + 80;
+            precioBaseApoyo = precioBase + 80.0;
         }else if (peso >= 80) {
-            precioBase = precioBase + 100;
+            precioBaseApoyo = precioBase + 100.0;
         }
-        Integer precioFinal = precioBase + precioBase;
+        Double precioFinal = precioBaseApoyo + precioBase;
         return precioFinal;
     }
 }

@@ -25,7 +25,14 @@ public class Person {
         this.DNI = DNI;
     }
 
-    public Person(String name, Integer age, Character sex, Double height, Double weight, Integer DNI) {
+    public Person(
+            String name,
+            Integer age,
+            Character sex,
+            Double height,
+            Double weight,
+            Integer DNI)
+    {
         this.name = Objects.requireNonNull(name);
         this.age = Objects.requireNonNull(age);
         this.sex = Objects.requireNonNull(sex);

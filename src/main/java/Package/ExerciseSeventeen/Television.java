@@ -7,13 +7,13 @@ public class Television extends Electrodomestico{
 
     public Television() {}
 
-    public Television(Integer precioBase, Integer peso) {
+    public Television(Double precioBase, Integer peso) {
         super(precioBase, peso);
     }
 
     public Television(
             Colors colors,
-            Integer precioBase,
+            Double precioBase,
             Character consumoEnergetico,
             Integer peso)
     {
@@ -30,11 +30,12 @@ public class Television extends Electrodomestico{
         return sintonizadorTDT;
     }
 
-    public Integer precioFinal() {
+    public Double precioFinal() {
         if (resolucion < 40) {
-            //TODO falta logica
+            Double incremento = precioBase * 0.40;
+            return incremento;
         }else if (resolucion < 40 && (sintonizadorTDT)) {
-            return precioBase = precioBase + 50;
+            return precioBase = precioBase + 50.0;
         }
         return super.precioFinal();
     }
