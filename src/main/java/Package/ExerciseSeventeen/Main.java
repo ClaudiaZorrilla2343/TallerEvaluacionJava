@@ -30,19 +30,22 @@ public class Main {
         }
 
         for (int i = 0; i < arrayElectrodomestico.size(); i++) {
-            Boolean sacarLavadoras = arrayElectrodomestico instanceof Lavadora;
+            Boolean sacarLavadoras = arrayElectrodomestico.get(i) instanceof Lavadora;
             if (sacarLavadoras) {
-                sumaLavadoras = sumaLavadoras + 1;
+                sumaLavadoras += arrayElectrodomestico.get(i).precioFinal();
             }
         }
 
         for (int i = 0; i < arrayElectrodomestico.size(); i++) {
-            Boolean sacarTV = arrayElectrodomestico instanceof Television;
+            Boolean sacarTV = arrayElectrodomestico.get(i) instanceof Television;
             if (sacarTV) {
-                sumaTelevisores = sumaTelevisores + 1;
+                sumaTelevisores += arrayElectrodomestico.get(i).precioFinal();
             }
         }
 
+        System.out.println("La suma del precio de los electrodomesticos: " + sumaElectrodomesticos);
+        System.out.println("La suma del precio de las lavadoras: " + sumaLavadoras);
+        System.out.println("La suma del precio de los televisores: " + sumaTelevisores);
     }
 
 

@@ -22,11 +22,10 @@ public class Electrodomestico {
             Colors colors,
             Double precioBase,
             Character consumoEnergetico,
-            Integer peso)
-    {
+            Integer peso) {
         this.colors = comprobarColor();
         this.precioBase = Objects.requireNonNull(precioBase);
-        this.consumoEnergetico = 'F';
+        comprobarConsumoEnergetico(consumoEnergetico);
         this.peso = Objects.requireNonNull(peso);
     }
 
@@ -56,43 +55,36 @@ public class Electrodomestico {
         return colors;
     }
 
-    public double comprobarConsumoEnergetico(Character consumoEnergetico) {
+    public void comprobarConsumoEnergetico(Character consumoEnergetico) {
 
-        try {
-            switch (consumoEnergetico) {
-                case 'A':
-                    precioBase = precioBase + 100;
-                    break;
-                case 'B':
-                    precioBase = precioBase + 80;
-                    break;
-                case 'C':
-                    precioBase = precioBase + 60;
-                    break;
-                case 'D':
-                    precioBase = precioBase + 50;
-                    break;
-                case 'E':
-                    precioBase = precioBase + 30;
-                    break;
-                case 'F':
-                    precioBase = precioBase + 10;
-                    break;
-                default:
-                    precioBase = precioBase + 10;
-                    consumoEnergetico = 'F';
-                    break;
-            }
-        }catch (Exception e){
-            System.out.println("¡ERROR!");
+        switch (consumoEnergetico) {
+            case 'A':
+                precioBase = precioBase + 100;
+                break;
+            case 'B':
+                precioBase = precioBase + 80;
+                break;
+            case 'C':
+                precioBase = precioBase + 60;
+                break;
+            case 'D':
+                precioBase = precioBase + 50;
+                break;
+            case 'E':
+                precioBase = precioBase + 30;
+                break;
+            case 'F':
+                precioBase = precioBase + 10;
+                break;
+            default:
+                precioBase = precioBase + 10;
+                consumoEnergetico = 'F';
+                break;
         }
-
-        return precioBase;
     }
 
     public Colors comprobarColor() {
         Colors valorColor = null;
-        try {
 
             System.out.println("Colores disponibles para los electrodomesticos");
             Colors[] eleccion = Colors.values();
@@ -103,12 +95,7 @@ public class Electrodomestico {
             Integer opcionUsuario = read.nextInt();
 
             valorColor = eleccion[opcionUsuario - 1];
-            System.out.println("El color seleccionado fue: " + valorColor);
 
-            return valorColor;
-        } catch (Exception e) {
-            System.out.println("¡ERROR!");
-        }
         return valorColor;
     }
 
@@ -122,11 +109,11 @@ public class Electrodomestico {
 
         if (peso >= 0 && peso < 20) {
             precioBaseApoyo = precioBase + 10.0;
-        }else if(peso >= 20 && peso < 50) {
+        } else if (peso >= 20 && peso < 50) {
             precioBaseApoyo = precioBase + 50.0;
-        }else if (peso >= 50 && peso < 80) {
+        } else if (peso >= 50 && peso < 80) {
             precioBaseApoyo = precioBase + 80.0;
-        }else if (peso >= 80) {
+        } else if (peso >= 80) {
             precioBaseApoyo = precioBase + 100.0;
         }
         Double precioFinal = precioBaseApoyo + precioBase;

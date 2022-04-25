@@ -28,8 +28,6 @@ Y
 Z
 *src/main/java/Package/ExerciseFifteen.java,c\5\c58b4bc8549abd6aabbe00a7d7f9f4fdf9dee5ad
 V
-&src/main/java/Package/ExerciseOne.java,c\1\c189bb9b4f703b1be8494c11082b7c1978f711e5
-V
 &src/main/java/Package/ExerciseTwo.java,d\4\d42d645e5fbe08ec79c1245f96e478824e2d279d
 d
 4src/main/java/Package/ExerciseFour/ExerciseFour.java,5\e\5e22098ab9c1ac1a3951016c19d6cda3ce28b724

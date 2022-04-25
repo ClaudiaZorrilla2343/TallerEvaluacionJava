@@ -31,8 +31,7 @@ public class Person {
             Character sex,
             Double height,
             Double weight,
-            Integer DNI)
-    {
+            Integer DNI) {
         this.name = Objects.requireNonNull(name);
         this.age = Objects.requireNonNull(age);
         this.sex = Objects.requireNonNull(sex);
@@ -46,17 +45,18 @@ public class Person {
         try {
             if (idealWeight > 20) {
                 return -1;
-            }if (idealWeight >= 20 && idealWeight <= 25) {
+            }
+            if (idealWeight >= 20 && idealWeight <= 25) {
                 return 0;
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println("¡ERROR!");
         }
         return 1;
     }
 
     public Boolean isLegalAge() {
-        if(age <= 18){
+        if (age <= 18) {
             return true;
         }
         return false;
@@ -92,33 +92,28 @@ public class Person {
 
     public void requestData() {
 
-        try {
-            Scanner read = new Scanner(System.in);
+        Scanner read = new Scanner(System.in);
 
-            System.out.println("Ingrese su nombre: ");
-            String name = read.nextLine();
-            setName(name);
+        System.out.println("Ingrese su nombre: ");
+        String name = read.nextLine();
+        setName(name);
 
-            System.out.println("Ingrese su edad: ");
-            Integer age = read.nextInt();
-            setAge(age);
+        System.out.println("Ingrese su edad: ");
+        Integer age = read.nextInt();
+        setAge(age);
 
-            System.out.println("Ingrese su genero: masculino 'H' femenino 'F' ");
-            Character sex = read.nextLine().charAt(0);
-            sex = sex.toUpperCase(sex);
-            setSex(sex);
+        System.out.println("Ingrese su genero: masculino 'H' femenino 'F' ");
+        Character sex = read.nextLine().charAt(0);
+        sex = sex.toUpperCase(sex);
+        setSex(sex);
 
-            System.out.println("Ingrese su peso: ");
-            Double weight = read.nextDouble();
-            setWeight(weight);
+        System.out.println("Ingrese su peso: ");
+        Double weight = read.nextDouble();
+        setWeight(weight);
 
-            System.out.println("Ingrese su altura: ");
-            Double height = read.nextDouble();
-            setHeight(height);
-
-        }catch (Exception e) {
-            System.out.println("¡ERROR!");
-        }
+        System.out.println("Ingrese su altura: ");
+        Double height = read.nextDouble();
+        setHeight(height);
 
     }
 
