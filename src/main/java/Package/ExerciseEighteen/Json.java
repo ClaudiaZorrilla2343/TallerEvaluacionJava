@@ -1,17 +1,18 @@
 package Package.ExerciseEighteen;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static Package.ExerciseEighteen.Serie.toSerie;
 import static Package.ExerciseEighteen.Videojuego.toVideojuego;
 
-public class LlenarListas {
+public class Json {
     private final List<Serie> series;
     private final List<Videojuego> videojuegos;
 
-    public LlenarListas(List<Serie> series, List<Videojuego> videojuegos, List<String> cualquierCosa) {
-        this.series = series;
-        this.videojuegos = videojuegos;
+    public Json() {
+        series = new ArrayList<>();
+        videojuegos = new ArrayList<>();
 
         series.addAll(toSerie(
                 new Serie("Punto ciego", 4, "Misterio", "Cristopher Nolan"),

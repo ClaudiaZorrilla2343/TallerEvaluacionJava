@@ -1,0 +1,45 @@
+
+k	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ô°·öûÿÿÿÿ
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(±ŸóU
+
+java:S4165"dRemove this useless assignment; "height" already holds the assigned value along all execution paths.(—Ä°ùÿÿÿÿ
+
+java:S4165"dRemove this useless assignment; "weight" already holds the assigned value along all execution paths.(Õ‰š™ùÿÿÿÿ
+|
+java:S4165"aRemove this useless assignment; "DNI" already holds the assigned value along all execution paths.(È÷§‡ûÿÿÿÿ
+c	java:S116"NRename this field "DNI" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ùıÒê
+E
+java:S1172""*Remove this unused method parameter "DNI".(Ô°·öûÿÿÿÿ
+H
+java:S1172+"-Remove this unused method parameter "weight".(á… üÿÿÿÿ
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(î¹Òôşÿÿÿÿ
+\
+java:S1126;"AReplace this if-then-else statement by a single return statement.(Í½¹°øÿÿÿÿ
+R
+java:S1854C"7Remove this useless assignment to local variable "sex".(¢µÃòûÿÿÿÿ
+3
+java:S2119U"Save and re-use this "Random".(¼İÅf
+N	java:S106X"9Replace this use of System.out or System.err by a logger.(Ûî«Š
+S	java:S106a"9Replace this use of System.out or System.err by a logger.(îÖÀãúÿÿÿÿ
+M
+java:S1117b"7Rename "name" which hides the field declared at line 9.(ì€İ¼
+N	java:S106e"9Replace this use of System.out or System.err by a logger.(Ñä×…
+M
+java:S1117f"7Rename "age" which hides the field declared at line 10.(õÊõ÷
+S	java:S106i"9Replace this use of System.out or System.err by a logger.(ÌĞçûÿÿÿÿ
+S
+java:S1117j"7Rename "sex" which hides the field declared at line 11.(©»Ã8­Åã—†0
+Q
+java:S2209k"5Change this instance-reference to a static reference.(Âğã?8­Åã—†0
+S	java:S106n"9Replace this use of System.out or System.err by a logger.(ªßôÑÿÿÿÿÿ
+P
+java:S1117o":Rename "weight" which hides the field declared at line 13.(Íš£Ø
+S	java:S106r"9Replace this use of System.out or System.err by a logger.(ÔÀ™ùÿÿÿÿ
+U
+java:S1117s":Rename "height" which hides the field declared at line 12.(„ÃÜüÿÿÿÿ
+J
+java:S1656"/Remove or correct this useless self-assignment.(—Ä°ùÿÿÿÿ
+J
+java:S1656"/Remove or correct this useless self-assignment.(È÷§‡ûÿÿÿÿ
+J
+java:S1656"/Remove or correct this useless self-assignment.(Õ‰š™ùÿÿÿÿ

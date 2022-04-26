@@ -41,3 +41,7 @@ e
 5src/main/java/Package/ExerciseSeventeen/Lavadora.java,0\e\0e73c6e64c1df14b6b9bb85e6072613a73097c37
 a
 1src/main/java/Package/ExerciseSeventeen/Main.java,c\1\c16639d1189823d38e276de2fa8b1864b59778a4
+a
+1src/main/java/Package/ExerciseSixteen/Runner.java,5\7\57067825031d1aed015037489010c6d530f84d02
+a
+1src/main/java/Package/ExerciseSixteen/Person.java,1\a\1ab60e72bb77cf711cb1de46a9f16c94833c9195
