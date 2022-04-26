@@ -1,11 +1,21 @@
 package Package.ExerciseEighteen;
 
-public class Serie {
+public class Serie extends Base{
 
-    private String titulo;
-    private Integer numeroDeTemporadas;
-    private String genero;
-    private String creador;
+    private Integer numeroTemporadas = 3;
+    private String creador = "";
 
+    public Serie() {}
 
+    public Serie(String titulo, String creador) {
+        this.titulo = titulo;
+        this.creador = creador;
+    }
+
+    public Serie(String titulo, Integer numeroDeTemporadas, String genero, String creador) {
+        this.titulo = titulo;
+        this.numeroTemporadas = numeroDeTemporadas;
+        this.genero = genero;
+        this.creador = creador;
+    }
 }

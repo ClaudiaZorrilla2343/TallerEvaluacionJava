@@ -1,0 +1,12 @@
+
+€
+java:S1488w"cImmediately return this expression instead of assigning it to the temporary variable "precioFinal".(¬ÜƒŠ8™ˆ¼ö…0
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ò·–şÿÿÿÿ
+C
+java:S1172"-Remove this unused method parameter "colors".(êÀÖÜ
+[
+java:S1854Q"ERemove this useless assignment to local variable "consumoEnergetico".(õ“Ş¼
+S	java:S106Y"9Replace this use of System.out or System.err by a logger.(ÊŞ£ëøÿÿÿÿ
+N	java:S106\"9Replace this use of System.out or System.err by a logger.(ÿµÁì
+N	java:S106^"9Replace this use of System.out or System.err by a logger.(¥ó›±
+Z	java:S106h"9Replace this use of System.out or System.err by a logger.(±’ûÿÿÿÿ8¯ˆ¼ö…0

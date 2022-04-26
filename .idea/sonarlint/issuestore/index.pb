@@ -31,3 +31,13 @@ V
 &src/main/java/Package/ExerciseTwo.java,d\4\d42d645e5fbe08ec79c1245f96e478824e2d279d
 d
 4src/main/java/Package/ExerciseFour/ExerciseFour.java,5\e\5e22098ab9c1ac1a3951016c19d6cda3ce28b724
+V
+&src/main/java/Package/ExerciseOne.java,c\1\c189bb9b4f703b1be8494c11082b7c1978f711e5
+g
+7src/main/java/Package/ExerciseSeventeen/Television.java,9\3\9374ec764345da6afc8ba97ae93aa3fa5d492934
+m
+=src/main/java/Package/ExerciseSeventeen/Electrodomestico.java,1\0\10602f1b4d417523f3ca6ea831113cac92d576e5
+e
+5src/main/java/Package/ExerciseSeventeen/Lavadora.java,0\e\0e73c6e64c1df14b6b9bb85e6072613a73097c37
+a
+1src/main/java/Package/ExerciseSeventeen/Main.java,c\1\c16639d1189823d38e276de2fa8b1864b59778a4
