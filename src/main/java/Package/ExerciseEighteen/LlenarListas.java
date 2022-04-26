@@ -9,7 +9,7 @@ public class LlenarListas {
     private final List<Serie> series;
     private final List<Videojuego> videojuegos;
 
-    public LlenarListas(List<Serie> series, List<Videojuego> videojuegos) {
+    public LlenarListas(List<Serie> series, List<Videojuego> videojuegos, List<String> cualquierCosa) {
         this.series = series;
         this.videojuegos = videojuegos;
 
@@ -29,6 +29,11 @@ public class LlenarListas {
 
     }
 
+    public List<Serie> getSeries() {
+        return series;
+    }
 
-
+    public List<Videojuego> getVideojuegos() {
+        return videojuegos;
+    }
 }
