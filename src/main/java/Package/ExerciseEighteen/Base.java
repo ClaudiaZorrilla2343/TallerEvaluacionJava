@@ -18,21 +18,22 @@ public class Base implements Entregable{
 
     @Override
     public void entregable() {
-
+        this.entregado = true;
     }
 
     @Override
     public void devolver() {
-
+        this.entregado = false;
     }
 
     @Override
     public Boolean isEntregado() {
-        return null;
+        return this.entregado;
     }
 
     @Override
     public Boolean compareTo(Object o) {
-        return null;
+        Base base = (Base) o;
+        return Objects.equals(this.titulo, base.titulo);
     }
 }

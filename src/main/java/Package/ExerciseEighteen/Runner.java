@@ -34,12 +34,31 @@ public class Runner implements ServicioRunner{
                 contados += 1;
             }
         }
-
-        System.out.println("Hay " + contados + " entregados");
+        System.out.println("Hay "+contados+" entregados");
     }
 
     @Override
     public void elementoSuperior(Json json) {
+        Videojuego videojuego = new Videojuego();
+        Serie serie = new Serie();
 
+        for (Serie serieField: json.getSeries()) {
+            if(serie.getNumeroTemporada() <= serieField.getNumeroTemporada()) {
+                serie = serieField;
+            }
+        }
+
+        for (Videojuego videojuegoField: json.getVideojuegos()) {
+            if(videojuego.getHorasEstimadas() <= videojuegoField.getHorasEstimadas()) {
+                videojuego = videojuegoField;
+            }
+        }
+        System.out.println(videojuego);
+        System.out.println(serie);
+    }
+
+    public static void main(String[] args) {
+        Runner app = new Runner();
+        app.iniciar();
     }
 }

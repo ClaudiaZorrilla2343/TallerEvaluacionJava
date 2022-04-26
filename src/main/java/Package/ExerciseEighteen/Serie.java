@@ -55,4 +55,9 @@ public class Serie extends Base{
         return Arrays.stream(series).toList();
     }
 
+    public Boolean compareTo(Object o) {
+        Serie serie = (Serie) o;
+        return this.numeroTemporada.equals(serie.numeroTemporada);
+    }
+
 }

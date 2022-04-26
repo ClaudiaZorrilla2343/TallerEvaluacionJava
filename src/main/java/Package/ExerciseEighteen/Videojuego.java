@@ -55,4 +55,10 @@ public class Videojuego extends Base{
         return Arrays.stream(videojuegos).toList();
     }
 
+    @Override
+    public Boolean compareTo(Object o) {
+        Videojuego videojuego = (Videojuego) o;
+        return this.horasEstimadas.equals(videojuego.horasEstimadas);
+    }
+
 }
