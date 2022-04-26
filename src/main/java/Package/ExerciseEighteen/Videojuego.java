@@ -1,5 +1,8 @@
 package Package.ExerciseEighteen;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Videojuego extends Base{
     private Integer horasEstimadas = 10;
     private String compañia = "";
@@ -46,6 +49,10 @@ public class Videojuego extends Base{
                 ", entregado=" + entregado +
                 ", genero='" + genero + '\'' +
                 '}';
+    }
+
+    public static List<Videojuego> toVideojuego(Videojuego... videojuegos) {
+        return Arrays.stream(videojuegos).toList();
     }
 
 }

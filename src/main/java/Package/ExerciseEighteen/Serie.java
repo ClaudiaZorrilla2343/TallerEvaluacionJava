@@ -1,5 +1,8 @@
 package Package.ExerciseEighteen;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Serie extends Base{
 
     private Integer numeroTemporada = 3;
@@ -47,4 +50,9 @@ public class Serie extends Base{
                 ", creador='" + creador + '\'' +
                 '}';
     }
+
+    public static List<Serie> toSerie(Serie... series) {
+        return Arrays.stream(series).toList();
+    }
+
 }
